@@ -10,35 +10,30 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
+    <link rel="icon" href="./src/favicon.ico" type="imagen/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Inicio</title>
 </head>
 <body>
 
     <!-- Nav -->
     <header class="flex w-full fixed top-0 z-1">
-        <nav class="flex justify-content-between w-full navbar">
-            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
-                <img src="./src/b12.jpg" alt="logo">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="12" y1="5" x2="12" y2="19" />
-                    <line x1="18" y1="11" x2="12" y2="5" />
-                    <line x1="6" y1="11" x2="12" y2="5" />
-                  </svg>
-            </span>
-
-            
-            <div class="header__info flex align-items-center gap-3">
-                <ul class="flex flex-column xl:flex-row list-none">
-                    <li onclick="scrollToSection('Inicio')">INICIO</li>
-                    <li onclick="scrollToSection('Nosotros')">NOSOTROS</li>
-                    <li onclick="scrollToSection('Blog')">BLOG</li>
-                </ul>
-            
-            </div>
-        </nav>
-    </header>
+      <nav class="flex justify-content-between w-full navbar">
+        
+        <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+            <img src="./src/b12.jpg" alt="logo">
+        </span>
+        <div class="header__info flex align-items-center gap-3">
+              <ul class="flex flex-row list-none"> <!-- Agregada la clase flex y eliminada la clase flex-column -->
+                  <li onclick="scrollToSection('Inicio')">INICIO</li>
+                  <li onclick="scrollToSection('Nosotros')">NOSOTROS</li>
+                  <li onclick="scrollToSection('Blog')">BLOG</li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+  
     
     <section id="inicio">
       
@@ -46,7 +41,7 @@
           <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true, "autoplaySpeed": 1000}'>
               
             <div class="gallery-cell" >
-                  <img src="./src/b12.jpg" alt="">
+                  <img src="./src/b12 (2).jpg" alt="">
               </div>
               <div class="gallery-cell">
                   <img src="./src/conf.png" alt="">
@@ -58,10 +53,10 @@
                   <img src="./src/grup.png" alt="">
               </div>
               <div class="gallery-cell">
-                <img src="./src/grup2.JPG" alt="">
+                <img src="./src/grupo2.jpg" alt="">
             </div>
             <div class="gallery-cell">
-              <img src="./src/grup3.jpg" alt="">
+              <img src="./src/grupo1.jpg" alt="">
           </div>
           </div>
           </div>
@@ -71,7 +66,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="video-container">
-          <iframe width="460" height="115" src="https://www.youtube.com/embed/odyIsnsu-DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0MhdBYF3wrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         </div>
         <div class="col-md-6">
@@ -84,6 +79,32 @@
       </div>
     </div>
   </section>
+</section>
+
+<section id="nosotros">
+  <div class="container">
+    <h5 id="textoNosotros1">
+      ¿Qué es? Brigada 12 es un proyecto social que surgió durante la pandemia, dirigido a la atención de personas en condición de calle (que tanto se han visto afectadas por la actual contingencia del Covid-19) por medio del cual los jóvenes provenientes de distintas casas hogares, así como distintos miembros de la comunidad civil, se dan cita un día a la semana a las 12 de la noche para repartir insumos básicos a los más necesitados entre los cuales se incluyen: Comida, Cobijas, Bebidas, atención médica y juguetes. 
+    </h5>
+    <img id="imgNosotros1" src="./src/b12.jpg" alt="Ayudando a las personas neceitadas">
+    <h5  id="textoNosotros2">
+      Con presencia en toda la república mexicana (entre los estados que se pueden destacar: Oaxaca, DF, Puebla, Jalisco, Zacatecas, Baja California, Colima y algunos estados de Colombia) más de 15 mil miembros cada viernes a las 12 de la noche se dan cita en distintos puntos de la republica a repartir insumos a quienes más lo necesitan, así como brindarles la oportunidad de formar parte de alguna de las casas hogares de la comunidad gente despertar (una de las comunidades terapéuticas más grandes de Latinoamérica) en un proceso de reinserción social sin límite de edad o distinción de género.
+    </h5>
+    <img id="imgNosotros2" src="./src/b12.jpg" alt="Ayudando a las personas necesitadas">
+  </div>
+</section>
+
+<!--ESTA ES LA SECCIÓN DEL FOOTER-->
+  <footer>
+    <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
+    <div class="redes">
+      <img class src="./src/b12.jpg" alt="Logo para la página">
+        <a href="https://www.facebook.com/BrigadaB12" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@alvarosebastianquirozbolan2042" target="_blank"><i class="fa-brands fa-youtube"></i>
+        <a href="tel:+523320665657" target="_blank"><i class="fa-solid fa-phone"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+</footer>
 
 
   <script
