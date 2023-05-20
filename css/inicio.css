@@ -1,5 +1,5 @@
 body{
-    background-image: url(/src/background.jpg);
+    /* background-image: url(/src/background.jpg); */
     background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -172,60 +172,108 @@ background-color: #000000;
   padding: 2%;
 }
 
+/*SECCIÓN DE ALIADOS*/
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
 
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
 
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
 
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
 
 
 
   /*SECCIÓN DEL FOOTER*/
 
   footer{
-    background-color: #171f27;
+    background-color: #272932 !important;  
     color: #fff;
-    padding: 50px 0 30px 0;
-    text-align: center;
-    position: relative;
-    width: 100%;
-}
-footer .redes{
-    margin-bottom: 20px;
-}
-footer .redes a{
-    color: #fff;
-    display: inline-block;
+  }
+  
+  a{
     text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
-}
-footer .arriba{
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #115656;
+    font-size: 17px;
+  }
+  
+  .subtfooter{
+    color: #FCC875 !important;
+    font-size: 19px;
+  }
+  
+  
+  a:hover{
+    color:#FCC875 !important;
+  }
+  
+  .imagenPrincipalFooter{
+    width: 270px;
+    height: 270px;
+  }
+  
+  
+  .iconoRedes{
+    width: 35px;
+    height: auto;
+  }
+  
+  .historiafooter{
+  text-align: justify;
+  }
+  
+  p span{
+    color: #FCC875;
+  
+  }
+  
+  .textfoot{
     color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
-}
-
-.imagen_footer {
-  width: 8rem;
-  height: auto;
-  float: left;
-  margin-left: 5rem;
-  margin-right: 2rem;
-  border-radius: 50%;
-}
+    text-decoration: none;
+  }
+  
+  
+  
+  
