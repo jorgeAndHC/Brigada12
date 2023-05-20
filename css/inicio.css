@@ -1,56 +1,149 @@
-body{
-    /* background-image: url(/src/background.jpg); */
+/* body{
+    background-image: url(/src/background.jpg);
     background-size: cover;
   background-attachment: fixed;
   position: relative;
-  }
+  } */
 
 /* ------- Nav -------- */
-.navbar {
-    padding: 0 12rem;
-    background-color: #ffffff;
-    position: relative;
-    border-bottom: solid #a11010;
-}
-
-.logo img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    margin-top: 1rem;
-}
-
-.header__info ul li {
-    padding: 2.5rem 1.2rem 1rem 1.2rem;
-    cursor: pointer;
-}
-
-.hireMe__button a {
-    background-color: #135B11;
-    color: #000000;
-    font-size: small;
-    padding: 1rem 1.5rem;
-    border-color: unset;
-    border-width: 0;
-}
-.header__info ul li:hover {
-    background-color:#ece8e6;
-}
-
-.header__info ul {
-  display: flex;
-  list-style: none;
+*{
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
 }
 
-.header__info ul li {
-  padding: 2.5rem 1.2rem 1rem 1.2rem;
-  cursor: pointer;
-  display: inline-block;
+body{
+  min-height: 100vh;
 }
+header .brand img{
+  height: 60px;
+}
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  transition: 0.6s;
+}
+
+header.down{
+  background:#191919;
+  padding: 15px 80px;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .menu ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu ul li{
+	list-style: none;
+}
+
+header .menu a{
+  color:#fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  background: #fff;
+}
+
+.section-two{
+  padding: 20px;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px){
+  header, header.down{
+  	padding: 20px 40px;
+  }
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #191919;
+    min-width: 330px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu ul{
+	  flex-direction: column;
+	}
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 600px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
   
-  
-/* ***************** */
 /* SECCION I N I C I O */
 /* ***************** */
 #inicio{
@@ -230,7 +323,7 @@ background-color: #000000;
   /*SECCIÓN DEL FOOTER*/
 
   footer{
-    background-color: #272932 !important;  
+    background-color: #191919!important;  
     color: #fff;
   }
   
@@ -240,13 +333,13 @@ background-color: #000000;
   }
   
   .subtfooter{
-    color: #FCC875 !important;
+    color: #f59622 !important;
     font-size: 19px;
   }
   
   
   a:hover{
-    color:#FCC875 !important;
+    color:#f59622 !important;
   }
   
   .imagenPrincipalFooter{
@@ -265,7 +358,7 @@ background-color: #000000;
   }
   
   p span{
-    color: #FCC875;
+    color: #f59622;
   
   }
   

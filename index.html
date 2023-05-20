@@ -14,13 +14,32 @@
       crossorigin="anonymous"/>
     <link rel="icon" href="./src/favicon.ico" type="imagen/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Inicio</title>
 </head>
 <body>
 
     <!-- Nav -->
 
-    es un proyecto internacional de carácter social que surgió durante la pandemia, dirigido a la atención de personas en condición de calle (que tanto se han visto afectadas por la actual contingencia del Covid-19).
+    <header>
+      <a href="#" class="brand">
+      	<img src="./src/imgLogos/b12.jpg">
+      </a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <ul>
+        	<li><a href="#">Inicio</a></li>
+        	<li><a href="#">Nosotros</a></li>
+        	<li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
 
     <!-- <header class="flex w-full fixed top-0 z-1">
       <nav class="flex justify-content-between w-full navbar">
@@ -42,28 +61,23 @@
     <section id="inicio">
       
         <div class="carrusel">
-          <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true, "autoplaySpeed": 1000}'>
+          <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true, "autoplaySpeed": 300}'>
               
             <div class="gallery-cell" >
-                  <img src="./src/b12 (2).jpg" alt="">
+                  <img src="./src/imgCarr/imgAbrazo.jpeg" alt="">
               </div>
               <div class="gallery-cell">
-                  <img src="./src/conf.png" alt="">
+                  <img src="./src/imgCarr/imgComida.jpeg" alt="">
               </div>
               <div class="gallery-cell">
-                  <img src="./src/Jugueton.jpg" alt="">
+                  <img src="./src/imgCarr/imgJuntos.jpeg" alt="">
               </div>
               <div class="gallery-cell">
-                  <img src="./src/grup.png" alt="">
+                  <img src="./src/imgCarr/imgReunion.jpeg" alt="">
               </div>
-              <div class="gallery-cell">
-                <img src="./src/grupo2.jpg" alt="">
-            </div>
-            <div class="gallery-cell">
-              <img src="./src/grupo1.jpg" alt="">
           </div>
           </div>
-          </div>
+
   </section>
   <section id="video">
     <div class="container">
@@ -121,7 +135,7 @@
 
        <div class="col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
            <a href="./index.html">
-               <img class="imagenPrincipalFooter" src="./src/b12.jpg"></a>
+               <img class="imagenPrincipalFooter" src="./src/imgLogos/b12.jpg"></a>
        </div>
 
        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -151,10 +165,10 @@
       <hr class="mb-4">
       <ul class="list-inline">
         <li class="list-inline-item">
-          <a href="https://es-la.facebook.com/" target="_blank" class="textfoot"><img class="iconoRedes" src="./src/facebookLogo.jpg" alt=""></a>
+          <a href="https://es-la.facebook.com/" target="_blank" class="textfoot"><img class="iconoRedes" src="./src/imgLogos/facebookLogo.jpg" alt=""></a>
         </li>
         <li class="list-inline-item">
-          <a href="https://www.instagram.com/" target="_blank" class="textfoot"><img class="iconoRedes" src="./src/youtubeLogo.png" alt=""></a>
+          <a href="https://www.instagram.com/" target="_blank" class="textfoot"><img class="iconoRedes" src="./src/imgLogos/youtubeLogo.png" alt=""></a>
         </li>
       </ul>
     </div>
@@ -179,6 +193,27 @@
   crossorigin="anonymous"
 ></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
   <script>
     var copy = document.querySelector(".logos-slide").cloneNode(true);
     document.querySelector(".logos").appendChild(copy);
