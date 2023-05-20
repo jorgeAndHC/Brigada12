@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ***************** */
+/* SECCION I N I C I O */
+/* ***************** */
+#inicio{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* Carrusel */ 
+ #inicio .carrusel{
+    position: relative;
+    height: 50%;
+}
+
+#inicio .gallery {
+    width: 100%;
+    height: 100%;
+}
+  
+
+#inicio .gallery-cell img{
+    display: block;
+    width: 100vw;
+    height:50vw;
+    object-fit: cover;
+}
