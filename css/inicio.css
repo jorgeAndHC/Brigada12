@@ -220,3 +220,12 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+.imagen_footer {
+  width: 8rem;
+  height: auto;
+  float: left;
+  margin-left: 5rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
