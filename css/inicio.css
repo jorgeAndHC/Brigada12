@@ -13,6 +13,13 @@
   font-family: verdana;
 }
 
+
+
+header a img{
+  border-radius: 50%;
+
+}
+
 body{
   min-height: 100vh;
 }
