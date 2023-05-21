@@ -13,8 +13,6 @@
   font-family: verdana;
 }
 
-
-
 header a img{
   border-radius: 50%;
 
@@ -370,41 +368,65 @@ header .btn{
 
   footer{
     background-color: #191919!important;  
-    color: #fff;
+    color: antiquewhite;
+    transition: 1.5s;
   }
   
   a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    transition: color 1.5s ease;
+  }
+  
+  .terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+    color: #f59622;
+  }
+  
+  .terminos:hover {
+    color:#955a13;
+    transition-delay: .15s;
   }
   
   .subtfooter{
-    color: #f59622 !important;
+    color: #ffcd01 !important;
     font-size: 19px;
   }
   
   
-  a:hover{
-    color:#f59622 !important;
+  .redesSociales:hover{
+    color:#ffcd01 !important;
+    transition-delay: .15s !important;
   }
   
   .imagenPrincipalFooter{
-    width: 270px;
-    height: 270px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
   }
   
   
-  .iconoRedes{
-    width: 35px;
-    height: auto;
+  .iconosRedes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 4px 25px;
+    font-size: 35px;
+    transition: .5s;
   }
   
   .historiafooter{
-  text-align: justify;
+  text-align: center;
   }
   
   p span{
-    color: #f59622;
+    color: #ffcd01;
   
   }
   
