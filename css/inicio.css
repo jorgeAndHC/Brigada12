@@ -10,10 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: verdana;
+  font-family: verdana; 
 }
-
-
 
 header a img{
   border-radius: 50%;
@@ -21,8 +19,10 @@ header a img{
 }
 
 body{
+  background-color: black !important;
   min-height: 100vh;
 }
+
 header .brand img{
   height: 60px;
 }
@@ -234,17 +234,21 @@ header .btn{
 
 #tituloNosotros{
   font-size: 400%;
-  
   padding: 2%;
   width: max-content;
-
   position: relative;
-  left: 35%;
-  top: -10rem;
-
   background-color: #000000;
   color: #ebdc16;
+  border-radius: 15px;
+}
 
+#tituloObjetivo{
+  margin-top: 20px;
+  padding: 2%;
+  width: max-content;
+  position: relative;
+  background-color: #000000;
+  color: #f59622 ;
   border-radius: 15px;
 }
 
@@ -264,51 +268,64 @@ header .btn{
 
 #textoNosotros1{
   position: relative;
-  top: 2rem  ;
-  width: 40%;
-  
-
+  top: 2rem;
+  width: 80%;
   border-radius: 20px;
   padding: 2%;
-
-  color: #000000;
+  color: antiquewhite;
+  font-size: large;
 }
 
 #textoNosotros2{
   position: relative;
-  left: 50%;
-  top: 2rem  ;
-
-  width: 50%;
-
+  width: 80%;
   border-radius: 20px;
   padding: 2%;
-  
-  
-  color: #ffffff;
+  font-size: large;
+  color: antiquewhite;
   background-color: #000000;
+}
+
+#textoA{
+  width: 100%;
+  color: antiquewhite;
+  font-size: large;
+  padding: 2%
+}
+
+#textoNosotrosLarge{
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  color: antiquewhite;
+  font-size: large;
+  padding: 2%
+}
+
+#just{
+  width: 100%;
+  color: antiquewhite;
+  font-size: xx-large;
+}
+
+#divBox{
+  padding: 2%;
+  border: 1px solid antiquewhite;
+}
+
+#listObj > li{
+  padding: 10px;
+  color: antiquewhite;
+  font-size: large;
+  width: 100%;
+  border-radius: 20px;
 }
 
 #imgNosotros1{
   position: relative;
-  left: 55%;
-  margin-top: -20rem;
-
   border-radius: 15px;
-
-  width: 40%;
-}
-
-#imgNosotros2{
-  position: relative;
-  left: 3%;
-  margin-top: -28rem;
-
-  padding: 2%;
-
-  border-radius: 10%;
-
-  width: 35%;
+  width: 80%;
+  left: 3em;
 }
 
 /*SECCIÓN DE ALIADOS*/
@@ -370,41 +387,65 @@ header .btn{
 
   footer{
     background-color: #191919!important;  
-    color: #fff;
+    color: antiquewhite;
+    transition: 1.5s;
   }
   
   a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    transition: color 1.5s ease;
+  }
+  
+  .terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+    color: #f59622;
+  }
+  
+  .terminos:hover {
+    color:#955a13;
+    transition-delay: .15s;
   }
   
   .subtfooter{
-    color: #f59622 !important;
+    color: #ffcd01 !important;
     font-size: 19px;
   }
   
   
-  a:hover{
-    color:#f59622 !important;
+  .redesSociales:hover{
+    color:#ffcd01 !important;
+    transition-delay: .15s !important;
   }
   
   .imagenPrincipalFooter{
-    width: 270px;
-    height: 270px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
   }
   
   
-  .iconoRedes{
-    width: 35px;
-    height: auto;
+  .iconosRedes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 4px 25px;
+    font-size: 35px;
+    transition: .5s;
   }
   
   .historiafooter{
-  text-align: justify;
+  text-align: center;
   }
   
   p span{
-    color: #f59622;
+    color: #ffcd01;
   
   }
   
