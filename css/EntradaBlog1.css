@@ -31,10 +31,11 @@
     align-items: center;
     padding: 20px 80px;
     transition: 0.6s;
+    background-color: #000000;
   }
   
   header.down{
-    background:#191919;
+    
     padding: 15px 80px;
   }
   

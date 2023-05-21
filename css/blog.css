@@ -62,7 +62,7 @@ body {
   transition: 0.2s;
 }
 .post-img-3 {
-  background: url(../src/imgblog/GuadalajaraBlog.jpg);
+  background: url(../src/blog/Nosotros.jpg);
   width: 100%;
   height: 200px;
   background-size: cover;
