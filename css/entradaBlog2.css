@@ -15,6 +15,7 @@
   
   body{
     min-height: 100vh;
+    background-color: #ffffff !important;
   }
   header .brand img{
     height: 60px;
