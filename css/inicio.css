@@ -10,8 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: verdana;
-  background-color: black ; 
+  font-family: verdana; 
 }
 
 
@@ -22,6 +21,7 @@ header a img{
 }
 
 body{
+  background-color: black !important;
   min-height: 100vh;
 }
 
