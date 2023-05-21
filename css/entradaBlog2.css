@@ -286,52 +286,76 @@
   
   
     /*SECCIÓN DEL FOOTER*/
+
+  footer{
+    background-color: #191919!important;  
+    color: antiquewhite;
+    transition: 1.5s;
+  }
   
-    footer{
-      background-color: #191919!important;  
-      color: #fff;
-    }
-    
-    a{
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    .subtfooter{
-      color: #f59622 !important;
-      font-size: 19px;
-    }
-    
-    
-    a:hover{
-      color:#f59622 !important;
-    }
-    
-    .imagenPrincipalFooter{
-      width: 270px;
-      height: 270px;
-    }
-    
-    
-    .iconoRedes{
-      width: 35px;
-      height: auto;
-    }
-    
-    .historiafooter{
-    text-align: justify;
-    }
-    
-    p span{
-      color: #f59622;
-    
-    }
-    
-    .textfoot{
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    
-    
-    
+  a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 1.5s ease;
+  }
+  
+  .terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+    color:  #20a9b2;
+  }
+  
+  .terminos:hover {
+    color: #197980;
+    transition-delay: .15s;
+  }
+  
+  .subtfooter{
+    color: #ffcd01 !important;
+    font-size: 19px;
+  }
+  
+  
+  .redesSociales:hover{
+    color:#ffcd01 !important;
+    transition-delay: .15s !important;
+  }
+  
+  .imagenPrincipalFooter{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  
+  
+  .iconosRedes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 4px 25px;
+    font-size: 35px;
+    transition: .5s;
+  }
+  
+  .historiafooter{
+  text-align: center;
+  }
+  
+  p span{
+    color: #ffcd01;
+  
+  }
+  
+  .textfoot{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  
+  
