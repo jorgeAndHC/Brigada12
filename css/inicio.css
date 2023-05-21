@@ -194,19 +194,13 @@ header .btn{
 
 .desvideo{
     margin-left: 5%;
-    display: inline-block;
+   place-items: center;
+  margin-top: 3rem;
     width: 100%;
+    display:grid;
 }
 
-  .desvideo h2{
-    color: #135B11;
-    font-family: "Fredoka";
-    font-size: 2.5em;
-    line-height: 1.2;
-    text-align: center;
-    width: 100%;
-    
-  }
+  
 
   .desvideo p{
     color: #272932;
@@ -214,7 +208,7 @@ header .btn{
     font-size: 1.2em;
     line-height: 1.5;
     width: 100%;
-    font-family: "Lato";  
+    font-family: "Verdana";  
   }
 
   .desvideo span{
@@ -223,7 +217,7 @@ header .btn{
     font-size: 1.2em;
     line-height: 1.5;
     width: 100%;
-    font-family: "Fredoka";
+    font-family: "Verdana";
     
   }
  /*SECCIÓN DEL NOSOTROS*/
@@ -237,8 +231,8 @@ header .btn{
   padding: 2%;
   width: max-content;
   position: relative;
-  background-color: #000000;
-  color: #ebdc16;
+ 
+  color:  #ffcd01;
   border-radius: 15px;
 }
 
@@ -247,24 +241,12 @@ header .btn{
   padding: 2%;
   width: max-content;
   position: relative;
-  background-color: #000000;
-  color: #f59622 ;
+
+  color: #20a9b2;
   border-radius: 15px;
 }
 
-/*#textoNosotros1{
-  position: relative;
- 
-  top: 2rem  ;
 
-  width: 40%;
-
-  border-radius: 20px;
-  padding: 2%;
-
-  color: #ffffff;
-  background-color: #000000;
-}*/
 
 #textoNosotros1{
   position: relative;
@@ -274,6 +256,7 @@ header .btn{
   padding: 2%;
   color: antiquewhite;
   font-size: large;
+  text-align: justify;
 }
 
 #textoNosotros2{
@@ -283,14 +266,16 @@ header .btn{
   padding: 2%;
   font-size: large;
   color: antiquewhite;
-  background-color: #000000;
+  text-align: justify;
+ 
 }
 
 #textoA{
   width: 100%;
   color: antiquewhite;
   font-size: large;
-  padding: 2%
+  padding: 2%;
+  text-align: justify;
 }
 
 #textoNosotrosLarge{
@@ -299,13 +284,22 @@ header .btn{
   border-radius: 20px;
   color: antiquewhite;
   font-size: large;
-  padding: 2%
+  padding: 2%;
+  text-align: justify;
 }
-
+#slogan{
+  color: #ffcd01;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  justify-content: center;
+  text-align: center;
+}
 #just{
   width: 100%;
-  color: antiquewhite;
+  color: #ffcd01 ;
   font-size: xx-large;
+  font-family: verdana; 
+  text-align: center;
 }
 
 #divBox{
@@ -319,6 +313,7 @@ header .btn{
   font-size: large;
   width: 100%;
   border-radius: 20px;
+  text-align: justify;
 }
 
 #imgNosotros1{
@@ -402,11 +397,11 @@ header .btn{
     justify-content: center;
     align-items: center;
     transition: 1.5s;
-    color: #f59622;
+    color:  #20a9b2;
   }
   
   .terminos:hover {
-    color:#955a13;
+    color: #197980;
     transition-delay: .15s;
   }
   
